@@ -298,24 +298,14 @@ public:
 };
 
 
-class comparePerson
-{
-    public:
-                bool operator()(const Person&p1, const Person&p2)
-                {
-                return p1.m_Age>p2.m_Age;
 
-                }
-
-};
 void test09()
 {
-    //自定义数据类型，都会指定排序的规则
-    set<Person,comparePerson>s;
+    set<Person>s;
     //创建person对象
     Person p1("刘备",25);
 
-    Person p2("张飞",65);
+    Person p2("张飞",25);
 
     Person p3("关羽",45);
 

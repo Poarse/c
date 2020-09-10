@@ -315,7 +315,7 @@ void test09()
     //创建person对象
     Person p1("刘备",25);
 
-    Person p2("张飞",65);
+    Person p2("张飞",25);
 
     Person p3("关羽",45);
 
