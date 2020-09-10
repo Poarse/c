@@ -225,27 +225,10 @@ void test06()
     
 
 }
-
-
-
-//pair 对组的使用
-void test07()
-{
-    //第一种的创建方式
-    pair<string,int>p("Tom",20);
-
-    cout <<"姓名："<<p.first <<" 年龄："<<p.second<<endl;
-
-
-
-}
-
-
-
 int main()
 {
 
-    test07();
+    test06();
     system("pause");
     return 0;
 }

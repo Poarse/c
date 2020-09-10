@@ -208,44 +208,11 @@ void test06()
         cout<<"第二次插入不成功"<<endl;
     }
     
-
-    //multiset
-
-    multiset<int>ms;
-    ms.insert(10);
-    ms.insert(10);
-
-    //遍历
-    for (multiset<int>::iterator it=ms.begin();it!=ms.end();it++)
-    {
-        cout<<*it <<" ";
-
-    }
-    cout<<endl;
-    
-
 }
-
-
-
-//pair 对组的使用
-void test07()
-{
-    //第一种的创建方式
-    pair<string,int>p("Tom",20);
-
-    cout <<"姓名："<<p.first <<" 年龄："<<p.second<<endl;
-
-
-
-}
-
-
-
 int main()
 {
 
-    test07();
+    test06();
     system("pause");
     return 0;
 }

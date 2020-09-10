@@ -160,7 +160,7 @@ void test04()
 
 }
 
-void test05()
+void teat05()
 {
      //查找
     set<int>s1;
@@ -177,75 +177,11 @@ void test05()
 
 }
 
-//
-void test06()
-{
-
-    set<int>s1;
-    s1.insert(10);
-
-    pair<set<int>::iterator, bool> ret = s1.insert(20);
-    if (ret.second)
-    {
-        /* code */
-        cout<<"第一次插入成功"<<endl;
-
-    }
-    else
-    {
-        cout<<"第一次插入不成功"<<endl;
-    }
-    
-    ret = s1.insert(20);
-     if (ret.second)
-    {
-        /* code */
-        cout<<"第二次插入成功"<<endl;
-
-    }
-    else
-    {
-        cout<<"第二次插入不成功"<<endl;
-    }
-    
-
-    //multiset
-
-    multiset<int>ms;
-    ms.insert(10);
-    ms.insert(10);
-
-    //遍历
-    for (multiset<int>::iterator it=ms.begin();it!=ms.end();it++)
-    {
-        cout<<*it <<" ";
-
-    }
-    cout<<endl;
-    
-
-}
-
-
-
-//pair 对组的使用
-void test07()
-{
-    //第一种的创建方式
-    pair<string,int>p("Tom",20);
-
-    cout <<"姓名："<<p.first <<" 年龄："<<p.second<<endl;
-
-
-
-}
-
-
 
 int main()
 {
 
-    test07();
+    test05();
     system("pause");
     return 0;
 }

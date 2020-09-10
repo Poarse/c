@@ -234,7 +234,7 @@ void test07()
     //第一种的创建方式
     pair<string,int>p("Tom",20);
 
-    cout <<"姓名："<<p.first <<" 年龄："<<p.second<<endl;
+    cout <<"姓名："<<p.first <<"年龄："<<p.second<<endl;
 
 
 
