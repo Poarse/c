@@ -4,7 +4,7 @@
 #include<map>
 using namespace std;
 //map 容器
-void printMap(map<int, int>&m)
+void printMap(const map<int, int>&m)
 { 
     for(map<int,int>::iterator it =m.begin(); it !=m.end(); it++)
     {
