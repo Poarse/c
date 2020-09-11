@@ -42,10 +42,10 @@ void test01()
 void test02()
 {
     //大小
-    map<int,int>m1;
-    m1.insert(pair<int,int>(1,20));
-    m1.insert(pair<int,int>(2,20));
-    if(m1.empty())
+    map<int,int>m;
+    m.insert(pair<int,int>(1,20));
+    m.insert(pair<int,int>(2.10));
+    if(m.empty())
     {
 
         cout<<"m 为空"<<endl;
@@ -53,22 +53,9 @@ void test02()
     else
     {
         cout<<"m不为空"<<endl;
-        cout<<"大小:"<<m1.size()<<endl;
     }
     
     //交换
-    map<int,int>m2;
-    m2.insert(pair<int,int>(3,240));
-    m2.insert(pair<int,int>(4,220));
-
-    cout<<"交换前"<<endl;
-printMap(m1);
-printMap(m2);
-
-cout<<"交换后"<<endl;
-m1.swap(m2);
-printMap(m1);
-printMap(m2);
 
 
 

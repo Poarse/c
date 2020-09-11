@@ -31,52 +31,11 @@ void test01()
     //拷贝构造
     map<int,int>m2(m);
     printMap(m2);
-
-    //赋值
-    map<int,int>m3;
-    m3 = m2;
-    printMap(m3);
-
 }
 
-void test02()
-{
-    //大小
-    map<int,int>m1;
-    m1.insert(pair<int,int>(1,20));
-    m1.insert(pair<int,int>(2,20));
-    if(m1.empty())
-    {
-
-        cout<<"m 为空"<<endl;
-    }
-    else
-    {
-        cout<<"m不为空"<<endl;
-        cout<<"大小:"<<m1.size()<<endl;
-    }
-    
-    //交换
-    map<int,int>m2;
-    m2.insert(pair<int,int>(3,240));
-    m2.insert(pair<int,int>(4,220));
-
-    cout<<"交换前"<<endl;
-printMap(m1);
-printMap(m2);
-
-cout<<"交换后"<<endl;
-m1.swap(m2);
-printMap(m1);
-printMap(m2);
-
-
-
-
-}
 int main()
 {
-    test02();
+    test01();
     system("pause");
 
     return 0;
