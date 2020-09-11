@@ -116,7 +116,7 @@ void test04()
     map<int,int>::iterator pos =m.find(3);
     if(pos != m.end())
     {
-        cout<<"查到：kye= "<<pos->first  <<"  value="<<(*pos).second<<endl;
+        cout<<"查到：kye= "<<pos->first  <<"value="<<(*pos).second<<endl;
     }
     else
     {
@@ -130,7 +130,7 @@ void test04()
 }
 int main()
 {
-    test04();
+    test03();
     system("pause");
     return 0;
 }

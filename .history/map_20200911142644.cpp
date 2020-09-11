@@ -86,51 +86,17 @@ void test03()
 
     m1[4]=40;
 
-    //cout <<m1[4]<<endl;   //不建议使用
+    cout <<m1[4]<<endl;   //不建议使用
     //可以利用key访问到value
     printMap(m1);
 
-    //删除
-    m1.erase(m1.begin());
-    printMap(m1);
-
-    m1.erase(3);
-    printMap(m1);
-
-    //区间
-    //m1.erase(m1.begin(), m1.end());
-    m1.clear();
-    printMap(m1);
-
-
 
 
 }
-void test04()
-{
-    map<int,int>m;
-    m.insert(pair<int,int>(1,10));
-    m.insert(pair<int, int >(2,20));
-    m.insert(pair<int,int>(3,30));
 
-    map<int,int>::iterator pos =m.find(3);
-    if(pos != m.end())
-    {
-        cout<<"查到：kye= "<<pos->first  <<"  value="<<(*pos).second<<endl;
-    }
-    else
-    {
-        cout<<"未找到"<<endl; 
-    }
-    
-
-
-
-
-}
 int main()
 {
-    test04();
+    test03();
     system("pause");
     return 0;
 }
