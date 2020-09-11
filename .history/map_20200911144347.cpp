@@ -125,45 +125,16 @@ void test04()
     
 
     //统计
-    //map 不允许插入重复key 元素， count统计而言 结果要么是0 要么是1
-    //mutimap 的count的统计可能大于1
-    int num= m.count(3);
+    int num= m.count();
     cout <<"num= "<<num <<endl;
 
-}
-class compareMap
-{
-    public:
-    bool operator()(int v1, int v2)
-    {
-        //降序
-        return v1 >v2;
-
-    }
 
 
-};
-//map容器排序
-void test05()
-{
-    map<int,int,compareMap>m;
-    m.insert(pair<int,int>(1, 10));
-    m.insert(make_pair(2, 20));
-    m.insert(make_pair(3, 50));
-    m.insert(make_pair(4, 52));
-
-    for(map<int,int,compareMap>::iterator it=m.begin(); it !=m.end();it++)
-    {
-
-        cout<<"key="<<it->first <<" value=" <<(*it).second<<endl;
-    }
-    cout <<endl;
 
 }
-
 int main()
 {
-    test05();
+    test04();
     system("pause");
     return 0;
 }

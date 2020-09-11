@@ -152,12 +152,7 @@ void test05()
     m.insert(make_pair(3, 50));
     m.insert(make_pair(4, 52));
 
-    for(map<int,int,compareMap>::iterator it=m.begin(); it !=m.end();it++)
-    {
-
-        cout<<"key="<<it->first <<" value=" <<(*it).second<<endl;
-    }
-    cout <<endl;
+    printMap(m);
 
 }
 
