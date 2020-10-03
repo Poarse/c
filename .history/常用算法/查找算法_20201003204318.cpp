@@ -108,23 +108,12 @@ void test02()
              v.push_back(i);
        }
        
-     vector<int>::iterator it =  find_if(v.begin(),v.end(),GreaterFive());
-     if(it == v.end())
-     {
-           cout<<"没有找到"<<endl;
-
-     }
-     else
-     {
-           
-           cout<<"找到"<<(*it)<<endl ;
-     }
-     
+      find_if(v.begin(),v.end(),GreaterFive())
  }
 int main()
 {
 
-      test03( );
+      test02( );
       system("pause");
       return 0;
 

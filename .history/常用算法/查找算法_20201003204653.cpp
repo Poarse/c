@@ -124,7 +124,7 @@ void test02()
 int main()
 {
 
-      test03( );
+      test02( );
       system("pause");
       return 0;
 

@@ -16,31 +16,8 @@ public:
             this->m_age = age;
 
       }
-      //重载 == 
-      bool operator==(const Person & p)
-      {
-
-            if (this->m_name == p.m_name &&this->m_age ==p.m_age)
-            {
-                  return true;
-            }
-            else
-            {
-                  return false;
-            }
-            
-      }
       string m_name;
       int m_age;
-};
-
-class GreaterFive
-{
-public:
-            bool operator()(int va)
-            {
-                  return va >5;
-            }
 };
 
 void test01()
@@ -80,8 +57,6 @@ void test02()
       v.push_back(p3);
       v.push_back(p4);
       
-      //
-      Person pp("bbb",90);
       vector<Person> :: iterator  it = find(v.begin(), v.end(), p2);
       //
       if (it == v.end())
@@ -92,39 +67,16 @@ void test02()
       }
       else
       {
-            cout<<"找到了: "<<"姓名:"<<it->m_name <<" 年龄:"<<it ->m_age <<endl;
+            cout<<"找到了"<<"姓名:"<<it->m_name <<"年龄:"<<it ->m_age <<endl;
             
       }
       
 }
 
- void test03()
- {
-
-       vector<int>v;
-       for (int i = 0; i <10; i++)
-       {
-             /* code */
-             v.push_back(i);
-       }
-       
-     vector<int>::iterator it =  find_if(v.begin(),v.end(),GreaterFive());
-     if(it == v.end())
-     {
-           cout<<"没有找到"<<endl;
-
-     }
-     else
-     {
-           
-           cout<<"找到"<<(*it)<<endl ;
-     }
-     
- }
 int main()
 {
 
-      test03( );
+      test02();
       system("pause");
       return 0;
 
