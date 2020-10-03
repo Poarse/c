@@ -30,7 +30,7 @@ public:
       //       }
             
       // }
-      bool operator==(const Person & p)
+      bool operator==(Person &p)
       {
             if (this->m_age == p.m_age)
             {

@@ -17,28 +17,15 @@ public:
 
       }
       //重载 == 
-      // bool operator==(const Person & p)
-      // {
-
-      //       if (this->m_name == p.m_name &&this->m_age ==p.m_age)
-      //       {
-      //             return true;
-      //       }
-      //       else
-      //       {
-      //             return false;
-      //       }
-            
-      // }
       bool operator==(const Person & p)
       {
-            if (this->m_age == p.m_age)
+
+            if (this->m_name == p.m_name &&this->m_age ==p.m_age)
             {
                   return true;
             }
             else
             {
-                  /* code */
                   return false;
             }
             
@@ -252,31 +239,11 @@ void test07()
       int num =count(v.begin(),v.end(),40);
       cout<<"40 的个数为："<<num <<endl;
 }
-//2.自定义数据类型
 
-void test08()
-{
-
-      vector<Person>v;
-      Person p1("刘备", 24);
-      Person p2("张飞", 24);
-      Person p3("关羽", 24);
-      Person p4("赵云", 14);
-      
-
-      v.push_back(p1);
-      v.push_back(p2);
-      v.push_back(p3);
-      v.push_back(p4);
-      
-      Person p("诸葛亮",24);
-      int  num = count(v.begin(),v.end(), p);
-      cout <<"诸葛亮同岁的人数："<<num<<endl;
-}
 int main()
 {
 
-      test08( );
+      test06( );
       system("pause");
       return 0;
 

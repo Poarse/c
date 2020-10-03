@@ -17,28 +17,15 @@ public:
 
       }
       //重载 == 
-      // bool operator==(const Person & p)
-      // {
-
-      //       if (this->m_name == p.m_name &&this->m_age ==p.m_age)
-      //       {
-      //             return true;
-      //       }
-      //       else
-      //       {
-      //             return false;
-      //       }
-            
-      // }
       bool operator==(const Person & p)
       {
-            if (this->m_age == p.m_age)
+
+            if (this->m_name == p.m_name &&this->m_age ==p.m_age)
             {
                   return true;
             }
             else
             {
-                  /* code */
                   return false;
             }
             
@@ -175,108 +162,12 @@ void test04()
 
 
 }
-//查找相邻重复的元素
-//adjacent_find
-void test05()
-{
-
-      vector<int>v;
-      v.push_back(0);
-      v.push_back(0);
-      v.push_back(1);
-      v.push_back(0);
-      v.push_back(0);
-      v.push_back(2);
-      v.push_back(4);
-
-      vector<int> :: iterator it = adjacent_find(v.begin(),v.end());
-
-      if(it == v.end())
-      {
-            cout<<"没有找到"<<endl;
-      }
-      else
-      {
-            
-            cout<<" 找到相邻元素"<<*it<<endl;
-      }
-      
-}
 
 
-//查找指定元素是否存在
-//binary_search
-//注意在无序的序列中不可用
-void test06()
-{
-
-      vector<int>v;
-      for (int  i = 0; i < 10; i++)
-      {
-            /* code */
-            v.push_back(i);
-
-      }
-      //查找容器中是否有元素9
-       bool ret = binary_search(v.begin(),v.end(),9);
-
-      if(ret)
-      {
-            cout <<"找到元素"<<endl;
-
-      }
-      else
-      {
-            /* code */
-             cout <<"没找到元素"<<endl;
-      }
-      
-}
-
-// 统计元素个数
-//count 
-
-//1. 统计内置数据类型
-void test07()
-{
-      vector<int>v;
-      v.push_back(10); 
-      v.push_back(30); 
-      v.push_back(40); 
-      v.push_back(50); 
-      v.push_back(20); 
-      v.push_back(60); 
-      v.push_back(80); 
-      v.push_back(90); 
-
-      int num =count(v.begin(),v.end(),40);
-      cout<<"40 的个数为："<<num <<endl;
-}
-//2.自定义数据类型
-
-void test08()
-{
-
-      vector<Person>v;
-      Person p1("刘备", 24);
-      Person p2("张飞", 24);
-      Person p3("关羽", 24);
-      Person p4("赵云", 14);
-      
-
-      v.push_back(p1);
-      v.push_back(p2);
-      v.push_back(p3);
-      v.push_back(p4);
-      
-      Person p("诸葛亮",24);
-      int  num = count(v.begin(),v.end(), p);
-      cout <<"诸葛亮同岁的人数："<<num<<endl;
-}
 int main()
 {
 
-      test08( );
+      test04( );
       system("pause");
       return 0;
 

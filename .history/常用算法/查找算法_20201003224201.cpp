@@ -17,28 +17,15 @@ public:
 
       }
       //重载 == 
-      // bool operator==(const Person & p)
-      // {
-
-      //       if (this->m_name == p.m_name &&this->m_age ==p.m_age)
-      //       {
-      //             return true;
-      //       }
-      //       else
-      //       {
-      //             return false;
-      //       }
-            
-      // }
       bool operator==(const Person & p)
       {
-            if (this->m_age == p.m_age)
+
+            if (this->m_name == p.m_name &&this->m_age ==p.m_age)
             {
                   return true;
             }
             else
             {
-                  /* code */
                   return false;
             }
             
@@ -262,15 +249,15 @@ void test08()
       Person p2("张飞", 24);
       Person p3("关羽", 24);
       Person p4("赵云", 14);
-      
+      Person p("诸葛亮",24);
 
       v.push_back(p1);
       v.push_back(p2);
       v.push_back(p3);
       v.push_back(p4);
       
-      Person p("诸葛亮",24);
-      int  num = count(v.begin(),v.end(), p);
+
+      int  num = count(v.begin(),v.end(),p);
       cout <<"诸葛亮同岁的人数："<<num<<endl;
 }
 int main()
